@@ -1,3 +1,9 @@
+package serialize;
+
+import serialize.Initialize;
+import serialize.JsonField;
+import serialize.JsonSerializable;
+
 @JsonSerializable
 public class Student {
 

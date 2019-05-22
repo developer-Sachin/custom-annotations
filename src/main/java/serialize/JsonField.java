@@ -1,3 +1,5 @@
+package serialize;
+
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
@@ -11,7 +13,7 @@ import java.lang.annotation.Target;
  * This annotation has one method. When applied to any field structure
  * will be as follows:
  *
- * /@JsonField(key = "studentName")
+ * /@serialize.JsonField(key = "studentName")
  *  private String name;
  */
 
