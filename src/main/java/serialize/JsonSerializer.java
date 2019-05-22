@@ -1,3 +1,10 @@
+package serialize;
+
+import serialize.Initialize;
+import serialize.JsonField;
+import serialize.JsonSerializable;
+import serialize.JsonSerializationException;
+
 import java.lang.reflect.Field;
 import java.lang.reflect.Method;
 import java.util.HashMap;
@@ -16,7 +23,7 @@ public class JsonSerializer {
         if (!clazz.isAnnotationPresent(JsonSerializable.class)) {
             throw new JsonSerializationException("The class "
                     + clazz.getSimpleName()
-                    + " is not annotated with JsonSerializable");
+                    + " is not annotated with serialize.JsonSerializable");
         }
     }
 
